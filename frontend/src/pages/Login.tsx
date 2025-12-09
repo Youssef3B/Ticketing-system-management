@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Link } from "react-router";
 
 function Login() {
   return (
@@ -43,7 +44,9 @@ function Login() {
 
           <p className="mt-3 text-center">
             You don't have an account?
-            <span className="text-primary font-bold"> Register</span>
+            <Link to={"/register"}>
+              <span className="text-primary font-bold"> Register</span>
+            </Link>
           </p>
         </form>
       </div>
