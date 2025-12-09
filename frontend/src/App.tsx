@@ -1,5 +1,14 @@
+import { Route, Routes } from "react-router";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
 function App() {
-  return <div className="bg-red-500">App</div>;
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  );
 }
 
 export default App;
