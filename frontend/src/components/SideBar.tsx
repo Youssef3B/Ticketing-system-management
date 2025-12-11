@@ -4,6 +4,7 @@ import {
   IconTicket,
   IconUsers,
   IconSettings,
+  IconCirclePlus,
 } from "@tabler/icons-react";
 
 function SideBar() {
@@ -21,6 +22,10 @@ function SideBar() {
         <li className="flex items-center space-x-2 p-2 rounded-sm text-white font-semibold cursor-pointer my-6">
           <IconTicket stroke={2} />
           <span>All Tickets</span>
+        </li>
+        <li className="flex items-center space-x-2 p-2 rounded-sm text-white font-semibold cursor-pointer my-6">
+          <IconCirclePlus stroke={2} />
+          <span>New Ticket</span>
         </li>
         <li className="flex items-center space-x-2 p-2 rounded-sm text-white font-semibold cursor-pointer my-6">
           <IconUsers stroke={2} />

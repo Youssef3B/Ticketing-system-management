@@ -6,9 +6,11 @@ function Layout() {
   return (
     <section className="flex ">
       <SideBar />
-      <div className="flex flex-1 flex-col">
+      <div className="flex flex-1 flex-col  bg-slate-200">
         <NavBar />
-        <Outlet />
+        <div className="px-14">
+          <Outlet />
+        </div>
       </div>
     </section>
   );
